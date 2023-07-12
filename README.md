@@ -145,6 +145,31 @@ app_mention
 
 ```
 
+https://api.slack.com/events/message/file_mention
+```json
+{
+	"type": "message",
+	"subtype": "file_mention",
+	"ts": "1358877455.000010",
+	"text": "<@cal> mentioned a file: <https:...7.png|7.png>",
+	"file": {...},
+	"user": "U2147483697"
+}
+
+```
+https://api.slack.com/events/message/me_message
+
+```json
+{
+	"type": "message",
+	"subtype": "me_message",
+	"channel": "C123ABC456",
+	"user": "U123ABC456",
+	"text": "is doing that thing",
+	"ts": "1355517523.000005"
+}
+```
+
 
 file_created
 
@@ -157,3 +182,8 @@ file_created
 	}
 }
 ```
+
+3623007291.5562131510389
+ClientSecret:6a91450940267bdd0ce5474bb5270007
+SigningSecret:7bf4b6d54027b49588c17e23c90c84e6
+VerificationToken:OYyhwAhrRjrL4IODKsH1DxEN
